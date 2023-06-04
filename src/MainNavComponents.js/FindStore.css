@@ -1,0 +1,13 @@
+.innerDiv > * {
+  width: 13rem;
+}
+
+.innerDiv {
+  border: none;
+  padding: 1rem;
+  background-color: white;
+}
+
+.popup {
+  display: flex;
+}

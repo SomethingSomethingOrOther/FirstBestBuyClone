@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --blue: rgb(10, 74, 191);
+}
+
+.App {
+  display: grid;
+  font-family: sans-serif;
+  text-align: center;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    "subnav subnav subnav subnav"
+    "hero hero hero hero"
+    "hero hero hero hero"
+    "topdeals topdeals topdeals topdeals";
+}
+.navbar {
+  grid-area: navbar;
+  background-color: var(--blue);
+}
+.hero {
+  grid-area: hero;
+  border: 1px solid black;
+  height: 20rem;
+}
+.subnav {
+  grid-area: subnav;
+  border: 1px solid black;
+  background-color: var(--blue);
+}
+.text {
+  color: white;
+  font-size: 2rem;
+}
+.topdeals {
+  grid-area: topdeals;
+  display: flex;
+  align-items: center;
+}
+.hero {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(2, 6, 210, 0.86) 14%,
+    rgba(57, 115, 220, 1) 27%,
+    rgba(10, 11, 130, 1) 37%,
+    rgba(4, 128, 177, 1) 63%,
+    rgba(7, 58, 187, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(2, 6, 210, 0.86) 14%,
+    rgba(57, 115, 220, 1) 27%,
+    rgba(10, 11, 130, 1) 37%,
+    rgba(4, 128, 177, 1) 63%,
+    rgba(7, 58, 187, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    90deg,
+    rgba(2, 6, 210, 0.86) 14%,
+    rgba(57, 115, 220, 1) 27%,
+    rgba(10, 11, 130, 1) 37%,
+    rgba(4, 128, 177, 1) 63%,
+    rgba(7, 58, 187, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ABB', endColorstr='#0206D2', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(2, 6, 210, 0.86) 14%,
+    rgba(57, 115, 220, 1) 27%,
+    rgba(10, 11, 130, 1) 37%,
+    rgba(4, 128, 177, 1) 63%,
+    rgba(7, 58, 187, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgba(2, 6, 210, 0.86) 14%,
+    rgba(57, 115, 220, 1) 27%,
+    rgba(10, 11, 130, 1) 37%,
+    rgba(4, 128, 177, 1) 63%,
+    rgba(7, 58, 187, 1) 100%
+  );
+}

@@ -1,0 +1,11 @@
+.container__cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+.container__cart:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.container__menu {
+  position: absolute;
+  top: 6rem;
+  left: 15rem;
+  z-index: 20rem;
+  background-color: white;
+  overflow: scroll;
+  height: 30rem;
+  width: 25rem;
+  cursor: pointer;
+}
+.container__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  background-color: var(--blue);
+  border: none;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
